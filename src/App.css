@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Archivo Narrow";
+  src: local("Archivo Narrow"),
+    url(./fonts/NotoSansJP-Regular.otf) format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Archivo Narrow";
+  font-weight: 900;
+  src: local("Archivo Narrow"),
+    url(./fonts/NotoSansJP-Bold.otf) format("opentype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Archivo Narrow";
+  font-weight: 900;
+  src: local("Archivo Narrow"),
+    url(./fonts/NotoSansJP-Black.otf) format("opentype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+body,
+html {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 10px;
   flex-direction: column;
-  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+}
+.container {
+  max-width: 960px;
+}
+a,
+p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.container-page {
+  margin: 56px auto;
+  position: relative;
+}
+.btn-loadmore {
+  height: 5.6rem;
+  width: 29.6rem;
+  background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+  color: #fff;
+  font-size: 1.8rem;
+  border: none;
+  margin-top: 2.8rem;
+}
+.card-list {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.goToTop {
+  position: absolute;
+  right: -80px;
+  bottom: 80px;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #777;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffcc21;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffcc21;
+}
+.form-control {
+  height: 56px;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 768px) {
+  body,
+  html {
+    font-size: 8px;
+    width: auto;
   }
 }

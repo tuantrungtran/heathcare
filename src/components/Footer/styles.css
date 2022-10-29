@@ -1,0 +1,17 @@
+.footer {
+  height: 128px;
+  background-color: #414141;
+  color: #fff;
+}
+.footer ul,
+.footer ul li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.footer ul li a {
+  font-size: 1.1rem;
+  padding-right: 4.5rem;
+  color: #fff;
+  text-decoration: none;
+}
